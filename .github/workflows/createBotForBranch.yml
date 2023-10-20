@@ -26,6 +26,7 @@ jobs:
 
       - name: Package bot
         run: |
+          ls -lah
           tar -czvf bot.tgz ./bot/*
           pwd
           ls -lah
