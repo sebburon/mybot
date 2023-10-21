@@ -1,0 +1,52 @@
+name: Merge bot with branch
+
+on:
+  workflow_dispatch:
+
+jobs:
+  override-code:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Authenticate and retrieve token
+        id: get_api_token
+        run: |
+          RESPONSE=$(curl -s -X POST "${{ secrets.DEV_URL }}/api/v2/admin/auth/login/basic/default" \
+                          -H "Content-Type: application/json" \
+                          -d '{
+                            "email": "${{ secrets.DEV_EMAIL }}",
+                            "password": "${{ secrets.DEV_PASSWORD }}"
+                          }')
+          API_TOKEN=$(echo $RESPONSE | jq -r '.payload.jwt')
+          echo "API_TOKEN=$API_TOKEN" >> $GITHUB_ENV
+        env:
+          USER: ${{ secrets.USER }}
+          PASSWORD: ${{ secrets.PASSWORD }}
+
+    - name: clean bot folder
+      run: |
+        rm -rm ./bot/*
+        cd bot
+
+    - name: Fetch bot from instance
+      run: |
+        curl -X GET -L "https://xyz.sebastienburon.com/api/v2/admin/workspace/bots/master/export" -H "X-BP-Workspace: default" \
+            -H "Authorization: Bearer ${{ env.API_TOKEN }}" \
+            -H "Content-Type: application/tar+gzip" --data-binary @bot.tgz  \
+            -o bot.tgz
+
+    - name: Unzip and overwrite bot
+      run: |
+        tar zxvf bot.tgz
+        rm bot.zip
+
+    - name: Commit and push changes
+      run: |
+        git config user.name "GitHub Workflow"
+        git config user.email "workflow@example.com"
+        git add .
+        git commit -m "Overwrite code via API"
+        git push
