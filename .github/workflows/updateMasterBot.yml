@@ -1,0 +1,45 @@
+name: Execute on Merge to Master
+
+on:
+  pull_request:
+    types:
+      - closed
+
+jobs:
+  execute-on-merge:
+    runs-on: ubuntu-latest
+    if: github.event.pull_request.merged == true && github.event.pull_request.base.ref == 'master'
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Authenticate and retrieve token
+      id: get_api_token
+      run: |
+        RESPONSE=$(curl -s -X POST "${{ secrets.DEV_URL }}/api/v2/admin/auth/login/basic/default" \
+                        -H "Content-Type: application/json" \
+                        -d '{
+                          "email": "${{ secrets.DEV_EMAIL }}",
+                          "password": "${{ secrets.DEV_PASSWORD }}"
+                        }')
+        API_TOKEN=$(echo $RESPONSE | jq -r '.payload.jwt')
+        echo "API_TOKEN=$API_TOKEN" >> $GITHUB_ENV
+      env:
+        USER: ${{ secrets.USER }}
+        PASSWORD: ${{ secrets.PASSWORD }}
+
+    - name: Package bot
+      run: |
+        ls -lah
+        tar -czvf bot.tgz ./bot/*
+        pwd
+        ls -lah
+
+    - name: Push bot to instance
+      run: |
+        curl -X POST -H "Authorization: Bearer ${{ env.API_TOKEN }}" -H "X-BP-Workspace: default" \
+             -H "Content-Type: application/tar+gzip" --data-binary @bot.tgz  \
+             "${{ secrets.DEV_URL }}/api/v2/admin/workspace/bots/master/import?overwrite=true"
+
+    
