@@ -28,7 +28,7 @@ jobs:
 
     - name: clean bot folder
       run: |
-        rm -rm ./bot/*
+        rm -rf ./bot/*
         cd bot
 
     - name: Fetch bot from instance
