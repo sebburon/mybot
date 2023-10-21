@@ -29,10 +29,11 @@ jobs:
     - name: clean bot folder
       run: |
         rm -rf ./bot/*
-        cd bot
+        
 
     - name: Fetch bot from instance
       run: |
+        cd bot
         curl -X GET -L "https://xyz.sebastienburon.com/api/v2/admin/workspace/bots/master/export" -H "X-BP-Workspace: default" \
             -H "Authorization: Bearer ${{ env.API_TOKEN }}" \
             -H "Content-Type: application/tar+gzip" --data-binary @bot.tgz  \
@@ -41,7 +42,7 @@ jobs:
     - name: Unzip and overwrite bot
       run: |
         tar zxvf bot.tgz
-        rm bot.zip
+        rm bot.tgz
 
     - name: Commit and push changes
       run: |
