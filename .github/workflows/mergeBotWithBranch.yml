@@ -41,7 +41,7 @@ jobs:
     - name: Unzip and overwrite bot
       run: |
         tar zxvf bot.tgz
-        rm bot.zip
+        rm bot.tgz
 
     - name: Commit and push changes
       run: |
