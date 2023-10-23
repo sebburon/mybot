@@ -1,0 +1,22 @@
+{
+  "id": "49u2dhhunh_what_color_is_a_dalmatian",
+  "data": {
+    "action": "text",
+    "contexts": [
+      "global"
+    ],
+    "enabled": true,
+    "answers": {
+      "en": [
+        "It's yellow with green patch"
+      ]
+    },
+    "questions": {
+      "en": [
+        "What color is a dalmatian"
+      ]
+    },
+    "redirectFlow": "",
+    "redirectNode": ""
+  }
+}

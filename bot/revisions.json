@@ -1,410 +1,140 @@
 [
   {
-    "path": "data/bots/BOT_ID_PLACEHOLDER/bot.config.json",
-    "revision": "e66_YnN0",
-    "created_on": "2023-10-20T18:36:27.337Z",
-    "created_by": "admin"
-  },
-  {
-    "path": "data/bots/BOT_ID_PLACEHOLDER/content-elements/builtin_text.json",
-    "revision": "KF808GLn",
-    "created_on": "2023-10-20T18:36:27.803Z",
-    "created_by": "admin"
-  },
-  {
-    "path": "data/bots/BOT_ID_PLACEHOLDER/content-elements/builtin_text.json",
-    "revision": "TrF8ZTvV",
-    "created_on": "2023-10-20T18:36:27.812Z",
-    "created_by": "admin"
-  },
-  {
-    "path": "data/bots/BOT_ID_PLACEHOLDER/content-elements/builtin_text.json",
-    "revision": "H1UGEY1g",
-    "created_on": "2023-10-20T18:36:27.819Z",
-    "created_by": "admin"
-  },
-  {
-    "path": "data/bots/BOT_ID_PLACEHOLDER/content-elements/builtin_text.json",
-    "revision": "kmkT239N",
-    "created_on": "2023-10-20T18:36:27.826Z",
-    "created_by": "admin"
-  },
-  {
-    "path": "data/bots/BOT_ID_PLACEHOLDER/content-elements/builtin_text.json",
-    "revision": "mjiYn1t_",
-    "created_on": "2023-10-20T18:36:27.836Z",
-    "created_by": "admin"
-  },
-  {
-    "path": "data/bots/BOT_ID_PLACEHOLDER/content-elements/builtin_text.json",
-    "revision": "Yn-kUm9s",
-    "created_on": "2023-10-20T18:36:27.843Z",
-    "created_by": "admin"
-  },
-  {
-    "path": "data/bots/BOT_ID_PLACEHOLDER/content-elements/builtin_text.json",
-    "revision": "EHVyQXtB",
-    "created_on": "2023-10-20T18:36:27.850Z",
-    "created_by": "admin"
-  },
-  {
-    "path": "data/bots/BOT_ID_PLACEHOLDER/content-elements/builtin_text.json",
-    "revision": "9Zowum6s",
-    "created_on": "2023-10-20T18:36:27.858Z",
-    "created_by": "admin"
-  },
-  {
-    "path": "data/bots/BOT_ID_PLACEHOLDER/content-elements/builtin_text.json",
-    "revision": "5urp3KOI",
-    "created_on": "2023-10-20T18:36:27.865Z",
-    "created_by": "admin"
-  },
-  {
-    "path": "data/bots/BOT_ID_PLACEHOLDER/content-elements/builtin_text.json",
-    "revision": "RJMAEu8X",
-    "created_on": "2023-10-20T18:36:27.873Z",
-    "created_by": "admin"
-  },
-  {
-    "path": "data/bots/BOT_ID_PLACEHOLDER/content-elements/builtin_text.json",
-    "revision": "5vLO2TJ0",
-    "created_on": "2023-10-20T18:36:27.885Z",
-    "created_by": "admin"
-  },
-  {
-    "path": "data/bots/BOT_ID_PLACEHOLDER/content-elements/builtin_text.json",
-    "revision": "tMHy8ojV",
-    "created_on": "2023-10-20T18:36:27.894Z",
-    "created_by": "admin"
-  },
-  {
-    "path": "data/bots/BOT_ID_PLACEHOLDER/content-elements/builtin_text.json",
-    "revision": "4jsy_LkP",
-    "created_on": "2023-10-20T18:36:27.900Z",
-    "created_by": "admin"
-  },
-  {
-    "path": "data/bots/BOT_ID_PLACEHOLDER/content-elements/builtin_text.json",
-    "revision": "BVJMejAJ",
-    "created_on": "2023-10-20T18:36:27.908Z",
-    "created_by": "admin"
-  },
-  {
-    "path": "data/bots/BOT_ID_PLACEHOLDER/content-elements/builtin_text.json",
-    "revision": "4-kowkbm",
-    "created_on": "2023-10-20T18:36:27.915Z",
-    "created_by": "admin"
-  },
-  {
-    "path": "data/bots/BOT_ID_PLACEHOLDER/content-elements/builtin_text.json",
-    "revision": "YzxYg77G",
-    "created_on": "2023-10-20T18:36:27.922Z",
-    "created_by": "admin"
-  },
-  {
-    "path": "data/bots/BOT_ID_PLACEHOLDER/content-elements/builtin_text.json",
-    "revision": "4vBHPcfG",
-    "created_on": "2023-10-20T18:36:27.928Z",
-    "created_by": "admin"
-  },
-  {
-    "path": "data/bots/BOT_ID_PLACEHOLDER/content-elements/builtin_text.json",
-    "revision": "rodXttF6",
-    "created_on": "2023-10-20T18:36:27.935Z",
-    "created_by": "admin"
-  },
-  {
-    "path": "data/bots/BOT_ID_PLACEHOLDER/content-elements/builtin_single-choice.json",
-    "revision": "1tiis4JA",
-    "created_on": "2023-10-20T18:36:27.944Z",
-    "created_by": "admin"
-  },
-  {
-    "path": "data/bots/BOT_ID_PLACEHOLDER/content-elements/builtin_single-choice.json",
-    "revision": "fxWaagZn",
-    "created_on": "2023-10-20T18:36:27.952Z",
-    "created_by": "admin"
-  },
-  {
-    "path": "data/bots/BOT_ID_PLACEHOLDER/content-elements/builtin_single-choice.json",
-    "revision": "CVxyyCpE",
-    "created_on": "2023-10-20T18:36:27.960Z",
-    "created_by": "admin"
-  },
-  {
-    "path": "data/bots/BOT_ID_PLACEHOLDER/content-elements/builtin_text.json",
-    "revision": "Jq8iRzk7",
-    "created_on": "2023-10-20T23:46:48.148Z",
-    "created_by": "admin"
-  },
-  {
-    "path": "data/bots/BOT_ID_PLACEHOLDER/content-elements/builtin_text.json",
-    "revision": "x_2UrD_l",
-    "created_on": "2023-10-20T23:46:48.159Z",
-    "created_by": "admin"
-  },
-  {
-    "path": "data/bots/BOT_ID_PLACEHOLDER/content-elements/builtin_text.json",
-    "revision": "Ts5o5pXG",
-    "created_on": "2023-10-20T23:46:48.168Z",
-    "created_by": "admin"
-  },
-  {
-    "path": "data/bots/BOT_ID_PLACEHOLDER/content-elements/builtin_text.json",
-    "revision": "4MgsEZ2c",
-    "created_on": "2023-10-20T23:46:48.176Z",
-    "created_by": "admin"
-  },
-  {
-    "path": "data/bots/BOT_ID_PLACEHOLDER/content-elements/builtin_text.json",
-    "revision": "SIM7u0Bj",
-    "created_on": "2023-10-20T23:46:48.185Z",
-    "created_by": "admin"
-  },
-  {
-    "path": "data/bots/BOT_ID_PLACEHOLDER/content-elements/builtin_text.json",
-    "revision": "P92TWwR1",
-    "created_on": "2023-10-20T23:46:48.197Z",
-    "created_by": "admin"
-  },
-  {
-    "path": "data/bots/BOT_ID_PLACEHOLDER/content-elements/builtin_text.json",
-    "revision": "-Vr_SuZ9",
-    "created_on": "2023-10-20T23:46:48.208Z",
-    "created_by": "admin"
-  },
-  {
-    "path": "data/bots/BOT_ID_PLACEHOLDER/content-elements/builtin_text.json",
-    "revision": "NfoD-dHI",
-    "created_on": "2023-10-20T23:46:48.217Z",
-    "created_by": "admin"
-  },
-  {
     "path": "data/bots/BOT_ID_PLACEHOLDER/flows/main.flow.json",
-    "revision": "5rzZjCt8",
-    "created_on": "2023-10-20T19:27:41.595Z",
+    "revision": "yn0Wn4wB",
+    "created_on": "2023-10-23T16:36:48.977Z",
     "created_by": "admin"
   },
   {
     "path": "data/bots/BOT_ID_PLACEHOLDER/flows/main.ui.json",
-    "revision": "E1EwtgAi",
-    "created_on": "2023-10-20T19:27:41.595Z",
+    "revision": "JTN06SUF",
+    "created_on": "2023-10-23T16:36:48.977Z",
     "created_by": "admin"
   },
   {
     "path": "data/bots/BOT_ID_PLACEHOLDER/flows/main.flow.json",
-    "revision": "uQQHagvF",
-    "created_on": "2023-10-20T19:27:42.574Z",
+    "revision": "sVhxlqFL",
+    "created_on": "2023-10-23T16:36:49.967Z",
+    "created_by": "admin"
+  },
+  {
+    "path": "data/bots/BOT_ID_PLACEHOLDER/flows/main.ui.json",
+    "revision": "S6xi79eT",
+    "created_on": "2023-10-23T16:36:49.967Z",
+    "created_by": "admin"
+  },
+  {
+    "path": "data/bots/BOT_ID_PLACEHOLDER/intents/__qna__49u2dhhunh_what_color_is_a_dalmatian.json",
+    "revision": "MAZJnTrI",
+    "created_on": "2023-10-23T16:37:28.867Z",
+    "created_by": "admin"
+  },
+  {
+    "path": "data/bots/BOT_ID_PLACEHOLDER/qna/49u2dhhunh_what_color_is_a_dalmatian.json",
+    "revision": "DqiPH9ck",
+    "created_on": "2023-10-23T16:37:28.871Z",
+    "created_by": "admin"
+  },
+  {
+    "path": "data/bots/BOT_ID_PLACEHOLDER/intents/__qna__49u2dhhunh_what_color_is_a_dalmatian.json",
+    "revision": "w0xjmzfq",
+    "created_on": "2023-10-23T16:37:30.571Z",
+    "created_by": "admin"
+  },
+  {
+    "path": "data/bots/BOT_ID_PLACEHOLDER/qna/49u2dhhunh_what_color_is_a_dalmatian.json",
+    "revision": "Jb9UmTb8",
+    "created_on": "2023-10-23T16:37:30.575Z",
+    "created_by": "admin"
+  },
+  {
+    "path": "data/bots/BOT_ID_PLACEHOLDER/intents/__qna__49u2dhhunh_what_color_is_a_dalmatian.json",
+    "revision": "2Q84wQe8",
+    "created_on": "2023-10-23T16:37:34.440Z",
+    "created_by": "admin"
+  },
+  {
+    "path": "data/bots/BOT_ID_PLACEHOLDER/qna/49u2dhhunh_what_color_is_a_dalmatian.json",
+    "revision": "Rss4D9LI",
+    "created_on": "2023-10-23T16:37:34.447Z",
+    "created_by": "admin"
+  },
+  {
+    "path": "data/bots/BOT_ID_PLACEHOLDER/intents/__qna__49u2dhhunh_what_color_is_a_dalmatian.json",
+    "revision": "DiDbCWUT",
+    "created_on": "2023-10-23T16:37:37.067Z",
+    "created_by": "admin"
+  },
+  {
+    "path": "data/bots/BOT_ID_PLACEHOLDER/qna/49u2dhhunh_what_color_is_a_dalmatian.json",
+    "revision": "dyLUoXKB",
+    "created_on": "2023-10-23T16:37:37.072Z",
     "created_by": "admin"
   },
   {
     "path": "data/bots/BOT_ID_PLACEHOLDER/flows/main.flow.json",
-    "revision": "fxgQqnUh",
-    "created_on": "2023-10-20T19:28:10.753Z",
+    "revision": "GyGsjVb1",
+    "created_on": "2023-10-23T16:37:46.836Z",
     "created_by": "admin"
   },
   {
     "path": "data/bots/BOT_ID_PLACEHOLDER/flows/main.ui.json",
-    "revision": "M16H0Ra4",
-    "created_on": "2023-10-20T19:27:42.574Z",
-    "created_by": "admin"
-  },
-  {
-    "path": "data/bots/BOT_ID_PLACEHOLDER/flows/main.ui.json",
-    "revision": "32GJrOtp",
-    "created_on": "2023-10-20T19:28:10.754Z",
-    "created_by": "admin"
-  },
-  {
-    "path": "data/bots/BOT_ID_PLACEHOLDER/bot.config.json",
-    "revision": "OICM7L3z",
-    "created_on": "2023-10-20T23:46:47.795Z",
-    "created_by": "admin"
-  },
-  {
-    "path": "data/bots/BOT_ID_PLACEHOLDER/content-elements/builtin_text.json",
-    "revision": "m9VqcH-t",
-    "created_on": "2023-10-20T23:46:48.228Z",
-    "created_by": "admin"
-  },
-  {
-    "path": "data/bots/BOT_ID_PLACEHOLDER/content-elements/builtin_text.json",
-    "revision": "B3xpV53L",
-    "created_on": "2023-10-20T23:46:48.239Z",
-    "created_by": "admin"
-  },
-  {
-    "path": "data/bots/BOT_ID_PLACEHOLDER/content-elements/builtin_text.json",
-    "revision": "s47IXigE",
-    "created_on": "2023-10-20T23:46:48.247Z",
-    "created_by": "admin"
-  },
-  {
-    "path": "data/bots/BOT_ID_PLACEHOLDER/content-elements/builtin_text.json",
-    "revision": "INcHyQlr",
-    "created_on": "2023-10-20T23:46:48.256Z",
-    "created_by": "admin"
-  },
-  {
-    "path": "data/bots/BOT_ID_PLACEHOLDER/content-elements/builtin_text.json",
-    "revision": "hAFoJBDh",
-    "created_on": "2023-10-20T23:46:48.264Z",
-    "created_by": "admin"
-  },
-  {
-    "path": "data/bots/BOT_ID_PLACEHOLDER/content-elements/builtin_text.json",
-    "revision": "ebI-IyS5",
-    "created_on": "2023-10-20T23:46:48.272Z",
-    "created_by": "admin"
-  },
-  {
-    "path": "data/bots/BOT_ID_PLACEHOLDER/content-elements/builtin_text.json",
-    "revision": "KjRkziuG",
-    "created_on": "2023-10-20T23:46:48.280Z",
-    "created_by": "admin"
-  },
-  {
-    "path": "data/bots/BOT_ID_PLACEHOLDER/content-elements/builtin_text.json",
-    "revision": "j-pjLKra",
-    "created_on": "2023-10-20T23:46:48.291Z",
-    "created_by": "admin"
-  },
-  {
-    "path": "data/bots/BOT_ID_PLACEHOLDER/content-elements/builtin_text.json",
-    "revision": "15hkcHZ6",
-    "created_on": "2023-10-20T23:46:48.299Z",
-    "created_by": "admin"
-  },
-  {
-    "path": "data/bots/BOT_ID_PLACEHOLDER/content-elements/builtin_text.json",
-    "revision": "YkkPDWp8",
-    "created_on": "2023-10-20T23:46:48.306Z",
-    "created_by": "admin"
-  },
-  {
-    "path": "data/bots/BOT_ID_PLACEHOLDER/content-elements/builtin_single-choice.json",
-    "revision": "cbgl2FGA",
-    "created_on": "2023-10-20T23:46:48.315Z",
-    "created_by": "admin"
-  },
-  {
-    "path": "data/bots/BOT_ID_PLACEHOLDER/content-elements/builtin_single-choice.json",
-    "revision": "CeOCtAPS",
-    "created_on": "2023-10-20T23:46:48.322Z",
-    "created_by": "admin"
-  },
-  {
-    "path": "data/bots/BOT_ID_PLACEHOLDER/content-elements/builtin_single-choice.json",
-    "revision": "_AaDgNuf",
-    "created_on": "2023-10-20T23:46:48.330Z",
+    "revision": "Jar_sfcQ",
+    "created_on": "2023-10-23T16:37:46.836Z",
     "created_by": "admin"
   },
   {
     "path": "data/bots/BOT_ID_PLACEHOLDER/flows/main.flow.json",
-    "revision": "0vsSG1us",
-    "created_on": "2023-10-21T00:43:04.663Z",
+    "revision": "fLwcZk6T",
+    "created_on": "2023-10-23T16:41:11.157Z",
     "created_by": "admin"
   },
   {
     "path": "data/bots/BOT_ID_PLACEHOLDER/flows/main.ui.json",
-    "revision": "GXWl8n0f",
-    "created_on": "2023-10-21T00:43:04.663Z",
+    "revision": "AeUkY28i",
+    "created_on": "2023-10-23T16:41:11.157Z",
     "created_by": "admin"
   },
   {
     "path": "data/bots/BOT_ID_PLACEHOLDER/flows/main.flow.json",
-    "revision": "sO9nNl_E",
-    "created_on": "2023-10-21T00:43:11.753Z",
+    "revision": "oilYaiAA",
+    "created_on": "2023-10-23T16:41:12.185Z",
     "created_by": "admin"
   },
   {
     "path": "data/bots/BOT_ID_PLACEHOLDER/flows/main.ui.json",
-    "revision": "_ETUWGEL",
-    "created_on": "2023-10-21T00:43:11.754Z",
+    "revision": "Pd8mou66",
+    "created_on": "2023-10-23T16:41:12.186Z",
     "created_by": "admin"
   },
   {
     "path": "data/bots/BOT_ID_PLACEHOLDER/flows/main.flow.json",
-    "revision": "KDANgA8X",
-    "created_on": "2023-10-21T00:43:13.260Z",
+    "revision": "AlZMR_We",
+    "created_on": "2023-10-23T16:45:15.862Z",
     "created_by": "admin"
   },
   {
     "path": "data/bots/BOT_ID_PLACEHOLDER/flows/main.ui.json",
-    "revision": "-OxPyyBV",
-    "created_on": "2023-10-21T00:43:13.260Z",
-    "created_by": "admin"
-  },
-  {
-    "path": "data/bots/BOT_ID_PLACEHOLDER/flows/main.ui.json",
-    "revision": "eGmRYgB8",
-    "created_on": "2023-10-21T02:02:07.750Z",
-    "created_by": "admin"
-  },
-  {
-    "path": "data/bots/BOT_ID_PLACEHOLDER/flows/main.ui.json",
-    "revision": "j3hCvLIS",
-    "created_on": "2023-10-21T02:02:09.791Z",
+    "revision": "FSGWwZWX",
+    "created_on": "2023-10-23T16:45:15.862Z",
     "created_by": "admin"
   },
   {
     "path": "data/bots/BOT_ID_PLACEHOLDER/flows/main.flow.json",
-    "revision": "rrNNja2M",
-    "created_on": "2023-10-21T02:02:07.750Z",
-    "created_by": "admin"
-  },
-  {
-    "path": "data/bots/BOT_ID_PLACEHOLDER/flows/main.flow.json",
-    "revision": "fqj-ub46",
-    "created_on": "2023-10-21T02:02:09.791Z",
-    "created_by": "admin"
-  },
-  {
-    "path": "data/bots/BOT_ID_PLACEHOLDER/flows/main.flow.json",
-    "revision": "K4vmQQSR",
-    "created_on": "2023-10-23T13:02:11.344Z",
+    "revision": "T42olFme",
+    "created_on": "2023-10-23T16:45:16.877Z",
     "created_by": "admin"
   },
   {
     "path": "data/bots/BOT_ID_PLACEHOLDER/flows/main.ui.json",
-    "revision": "UcvuFoIA",
-    "created_on": "2023-10-23T13:02:11.344Z",
+    "revision": "osaziqIW",
+    "created_on": "2023-10-23T16:45:16.878Z",
     "created_by": "admin"
   },
   {
-    "path": "data/bots/BOT_ID_PLACEHOLDER/flows/main.flow.json",
-    "revision": "VXqQJBkL",
-    "created_on": "2023-10-23T13:02:13.350Z",
-    "created_by": "admin"
-  },
-  {
-    "path": "data/bots/BOT_ID_PLACEHOLDER/flows/main.ui.json",
-    "revision": "iP_nAbfv",
-    "created_on": "2023-10-23T13:02:13.351Z",
-    "created_by": "admin"
-  },
-  {
-    "path": "data/bots/BOT_ID_PLACEHOLDER/flows/main.ui.json",
-    "revision": "vdwau1YO",
-    "created_on": "2023-10-23T16:35:38.294Z",
-    "created_by": "admin"
-  },
-  {
-    "path": "data/bots/BOT_ID_PLACEHOLDER/flows/main.flow.json",
-    "revision": "ti94XjkH",
-    "created_on": "2023-10-23T16:35:38.295Z",
-    "created_by": "admin"
-  },
-  {
-    "path": "data/bots/BOT_ID_PLACEHOLDER/flows/main.flow.json",
-    "revision": "B6v2BV0q",
-    "created_on": "2023-10-23T16:35:39.309Z",
-    "created_by": "admin"
-  },
-  {
-    "path": "data/bots/BOT_ID_PLACEHOLDER/flows/main.ui.json",
-    "revision": "vyhTGrVI",
-    "created_on": "2023-10-23T16:35:39.309Z",
+    "path": "data/bots/BOT_ID_PLACEHOLDER/models/25ec4517562f99bf.b7f4a95061d75566.7744.en.model",
+    "revision": "qZnNLPii",
+    "created_on": "2023-10-23T16:41:21.826Z",
     "created_by": "admin"
   }
 ]
