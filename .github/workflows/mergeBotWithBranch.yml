@@ -41,6 +41,7 @@ jobs:
 
     - name: Unzip and overwrite bot
       run: |
+        cd bot
         tar zxvf bot.tgz
         rm bot.tgz
 
