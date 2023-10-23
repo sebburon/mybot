@@ -76,7 +76,7 @@
   {
     "id": "builtin_text-lbs0Re",
     "formData": {
-      "text$en": "Hi, I'm Jimmy! My task is to help you understand how Botpress works.",
+      "text$en": "Hi, I'm Jimmy! How can I help you today?.",
       "typing$en": true
     },
     "createdBy": "admin",
