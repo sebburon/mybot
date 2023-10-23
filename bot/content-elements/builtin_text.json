@@ -16,7 +16,7 @@
   {
     "id": "builtin_text-AY5SSW",
     "formData": {
-      "text$en": "This is the first time we speak 🤖",
+      "text$en": "Hey looks like it's the first time we speak 🤖",
       "typing$en": true
     },
     "createdBy": "admin",
