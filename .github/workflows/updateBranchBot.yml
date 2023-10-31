@@ -43,6 +43,10 @@ jobs:
           cp -r bot/actions/* temp/actions/
           cp -r bot/hooks/* temp/hooks/
 
+      - name: Edit bot name
+        run: |
+          jq '.name = "master"' temp/bot.config.json > temp.json && mv temp.json temp/bot.config.json
+
       - name: Package bot
         run: |
           tar -czvf bot.tgz ./temp/*
