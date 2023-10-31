@@ -37,7 +37,6 @@ jobs:
               -H "Content-Type: application/tar+gzip" --data-binary @bot.tgz  \
               -o bot.tgz
           tar zxvf bot.tgz
-          rm bot.tgz
 
       - name: Commit and Push
         run: |
