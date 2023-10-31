@@ -28,18 +28,23 @@ jobs:
         run: |
           mkdir temp
           cd temp
+          pwd
+          ls -l
           curl -X GET -L "${{ secrets.DEV_URL }}/api/v2/admin/workspace/bots/${GITHUB_REF#refs/heads/}/export" -H "X-BP-Workspace: default" \
               -H "Authorization: Bearer ${{ env.API_TOKEN }}" \
               -H "Content-Type: application/tar+gzip" --data-binary @bot.tgz  \
               -o bot.tgz
           tar zxvf bot.tgz
+          pwd 
+          ls -l
 
       - name: Unzip and overwrite actions and hooks
         run: |
-          cp -r temp/actions/* bot/actions/
-          cp -r temp/hooks/* bot/hooks/
-          rm -rf temp/*
-          rmdir temp
+
+          cp -r temp/actions/* /bot/actions/
+          cp -r temp/hooks/* /bot/hooks/
+          rm -rf /temp/*
+          rmdir /temp
 
       - name: Package bot
         run: |
