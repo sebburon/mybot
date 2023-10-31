@@ -36,6 +36,7 @@ jobs:
               -H "Authorization: Bearer ${{ env.API_TOKEN }}" \
               -H "Content-Type: application/tar+gzip" --data-binary @bot.tgz  \
               -o bot.tgz
+          ls -l
           tar zxvf bot.tgz
           rm bot.tgz
 
