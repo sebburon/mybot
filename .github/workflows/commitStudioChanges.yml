@@ -32,7 +32,7 @@ jobs:
         run: |
           rm -rf bot/*
           cd bot
-          curl -X GET -L "${{ secrets.DEV_URL }}/api/v2/admin/workspace/bots/${GITHUB_REF#refs/heads/}/export" -H "X-BP-Workspace: default" \
+          curl -X GET -L "${{ secrets.DEV_URL }}/api/v2/admin/workspace/bots/${{ github.head_ref }}/export" -H "X-BP-Workspace: default" \
               -H "Authorization: Bearer ${{ env.API_TOKEN }}" \
               -H "Content-Type: application/tar+gzip" --data-binary @bot.tgz  \
               -o bot.tgz
