@@ -1,0 +1,48 @@
+name: update branch bot
+
+on:
+  push:
+    branches-ignore:
+      - master
+
+jobs:
+  override-code:
+    runs-on: ubuntu-latest
+
+steps:
+  - name: Checkout repository
+    uses: actions/checkout@v2
+
+  - name: Authenticate and retrieve token
+    id: get_api_token
+    run: |
+      RESPONSE=$(curl -s -X POST "${{ secrets.DEV_URL }}/api/v2/admin/auth/login/basic/default" \
+                      -H "Content-Type: application/json" \
+                      -d '{
+                        "email": "${{ secrets.DEV_EMAIL }}",
+                        "password": "${{ secrets.DEV_PASSWORD }}"
+                      }')
+      API_TOKEN=$(echo $RESPONSE | jq -r '.payload.jwt')
+      echo "API_TOKEN=$API_TOKEN" >> $GITHUB_ENV
+    env:
+      USER: ${{ secrets.USER }}
+      PASSWORD: ${{ secrets.PASSWORD }}
+
+  - name: delete bot
+    run: |
+      BRANCH_NAME=${{ github.event.ref }}
+      curl -X POST -H "Authorization: Bearer ${{ env.API_TOKEN }}" -H "X-BP-Workspace: default" \
+           "${{ secrets.DEV_URL }}/api/v2/admin/workspace/bots/${BRANCH_NAME#refs/heads/}/delete"
+
+  - name: Package bot
+    run: |
+      ls -lah
+      tar -czvf bot.tgz ./bot/*
+      pwd
+      ls -lah
+
+  - name: Push bot to instance
+    run: |
+      curl -X POST -H "Authorization: Bearer ${{ env.API_TOKEN }}" -H "X-BP-Workspace: default" \
+           -H "Content-Type: application/tar+gzip" --data-binary @bot.tgz  \
+           "${{ secrets.DEV_URL }}/api/v2/admin/workspace/bots/${GITHUB_REF#refs/heads/}/import?overwrite=false"
