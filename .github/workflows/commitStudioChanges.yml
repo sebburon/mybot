@@ -42,6 +42,7 @@ jobs:
 
       - name: Commit and Push
         run: |
+          git checkout "${{ github.head_ref }}"
           git add .
           git commit -m "commit from instance"
           git push origin "${{ github.head_ref }}"
