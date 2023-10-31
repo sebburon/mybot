@@ -37,13 +37,13 @@
   "languages": [
     "en"
   ],
-  "id": "master",
-  "name": "master",
+  "id": "sb-demo15",
+  "name": "master (sb-demo15)",
   "pipeline_status": {
     "current_stage": {
       "id": "dev",
-      "promoted_on": "2023-10-20T18:36:26.400Z",
-      "promoted_by": "admintesla"
+      "promoted_on": "2023-10-31T21:33:41.010Z",
+      "promoted_by": "system"
     }
   }
 }
