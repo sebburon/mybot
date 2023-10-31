@@ -1,0 +1,37 @@
+{
+  "version": "0.0.1",
+  "catchAll": {},
+  "startNode": "entry",
+  "description": "",
+  "nodes": [
+    {
+      "id": "c0e0295037",
+      "name": "entry",
+      "onEnter": [],
+      "onReceive": null,
+      "next": [
+        {
+          "condition": "true",
+          "node": "hello"
+        }
+      ],
+      "type": "standard"
+    },
+    {
+      "id": "204b4b4804",
+      "name": "hello",
+      "next": [
+        {
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": [
+        "myAction {}",
+        "myNewaction {}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    }
+  ]
+}
