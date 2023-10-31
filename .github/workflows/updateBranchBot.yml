@@ -40,15 +40,12 @@ jobs:
 
       - name: Unzip and overwrite actions and hooks
         run: |
-
-          cp -r temp/actions/* /bot/actions/
-          cp -r temp/hooks/* /bot/hooks/
-          rm -rf /temp/*
-          rmdir /temp
+          cp -r bot/actions/* temp/actions/
+          cp -r bot/hooks/* temp/hooks/
 
       - name: Package bot
         run: |
-          tar -czvf bot.tgz ./bot/*
+          tar -czvf bot.tgz ./temp/*
 
       - name: delete bot
         run: |
