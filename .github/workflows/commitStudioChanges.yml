@@ -1,0 +1,46 @@
+name: commit studio changes
+
+on:
+  pull_request:
+    types: [opened]
+
+jobs:
+  run-on-pr:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+
+      - name: Set up Git
+        run: |
+          git config --global user.name 'GitHub Action'
+          git config --global user.email 'action@github.com'
+
+      - name: Authenticate and retrieve token
+        id: get_api_token
+        run: |
+          RESPONSE=$(curl -s -X POST "${{ secrets.DEV_URL }}/api/v2/admin/auth/login/basic/default" \
+                          -H "Content-Type: application/json" \
+                          -d '{
+                            "email": "${{ secrets.DEV_EMAIL }}",
+                            "password": "${{ secrets.DEV_PASSWORD }}"
+                          }')
+          API_TOKEN=$(echo $RESPONSE | jq -r '.payload.jwt')
+          echo "API_TOKEN=$API_TOKEN" >> $GITHUB_ENV
+
+      - name: Fetch bot from instance
+        run: |
+          rm -rf bot/*
+          cd bot
+          curl -X GET -L "${{ secrets.DEV_URL }}/api/v2/admin/workspace/bots/${GITHUB_REF#refs/heads/}/export" -H "X-BP-Workspace: default" \
+              -H "Authorization: Bearer ${{ env.API_TOKEN }}" \
+              -H "Content-Type: application/tar+gzip" --data-binary @bot.tgz  \
+              -o bot.tgz
+          tar zxvf bot.tgz
+          rm bot.tgz
+
+      - name: Commit and Push
+        run: |
+          git add .
+          git commit -m "commit from instance"
+          git push
