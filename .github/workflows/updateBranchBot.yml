@@ -45,7 +45,7 @@ jobs:
 
       - name: Edit bot name
         run: |
-          jq '.name = "master (${BRANCH_NAME#refs/heads/})"' bot.config.json > temp.json && mv temp.json bot.config.json
+          jq '.name = "master (${BRANCH_NAME#refs/heads/})"' temp/bot.config.json > temp.json && mv temp.json temp/bot.config.json
 
       - name: Package bot
         run: |
