@@ -38,7 +38,7 @@
     "en"
   ],
   "id": "sb-demo16",
-  "name": "master (sb-demo16)",
+  "name": "master",
   "pipeline_status": {
     "current_stage": {
       "id": "dev",
