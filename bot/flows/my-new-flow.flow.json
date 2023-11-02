@@ -23,13 +23,39 @@
       "next": [
         {
           "condition": "true",
-          "node": ""
+          "node": "hello2"
         }
       ],
       "onEnter": [
         "myAction {}",
         "myNewaction {}"
       ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "62fad564e9",
+      "name": "hello2",
+      "next": [
+        {
+          "condition": "true",
+          "node": "world2"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "cc216c8952",
+      "name": "world2",
+      "next": [
+        {
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": [],
       "onReceive": null,
       "type": "standard"
     }
