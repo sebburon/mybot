@@ -42,4 +42,10 @@ jobs:
              -H "Content-Type: application/tar+gzip" --data-binary @bot.tgz  \
              "${{ secrets.DEV_URL }}/api/v2/admin/workspace/bots/master/import?overwrite=true"
 
+      - name: Set bot config
+        run: |
+          curl -X POST -H "Authorization: Bearer ${{ env.API_TOKEN }}" -H "X-BP-Workspace: default" \
+               -H "Content-Type: application/json" -d '{"name":"master","disabled":false,"private":false,"description":"Deployed by ${{ github.event.pull_request.user.login }}","defaultLanguage":"en","languages":["en"],"details":{"website":"","phoneNumber":"","emailAddress":"","termsConditions":"","privacyPolicy":"","avatarUrl":"https://bpweb.sebastienburon.com/logo.png","coverPictureUrl":""}}' \
+               "${{ secrets.DEV_URL }}/api/v1/studio/master/config"
+
     
