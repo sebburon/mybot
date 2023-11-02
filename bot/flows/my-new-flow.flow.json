@@ -55,7 +55,9 @@
           "node": ""
         }
       ],
-      "onEnter": [],
+      "onEnter": [
+        "say #!builtin_text-UP2ozm"
+      ],
       "onReceive": null,
       "type": "standard"
     }

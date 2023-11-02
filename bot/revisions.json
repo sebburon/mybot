@@ -1,122 +1,50 @@
 [
   {
     "path": "data/bots/BOT_ID_PLACEHOLDER/flows/main.flow.json",
-    "revision": "zxBYcRcu",
-    "created_on": "2023-11-02T12:56:58.903Z",
+    "revision": "NFFPtL9b",
+    "created_on": "2023-11-02T13:04:59.770Z",
     "created_by": "admin"
   },
   {
     "path": "data/bots/BOT_ID_PLACEHOLDER/flows/main.ui.json",
-    "revision": "lGNBIaYQ",
-    "created_on": "2023-11-02T12:56:58.903Z",
-    "created_by": "admin"
-  },
-  {
-    "path": "data/bots/BOT_ID_PLACEHOLDER/flows/main.flow.json",
-    "revision": "ny4CV_eZ",
-    "created_on": "2023-11-02T12:56:59.914Z",
-    "created_by": "admin"
-  },
-  {
-    "path": "data/bots/BOT_ID_PLACEHOLDER/flows/main.ui.json",
-    "revision": "Sg2YEnFs",
-    "created_on": "2023-11-02T12:56:59.915Z",
+    "revision": "k5uqu6Kc",
+    "created_on": "2023-11-02T13:04:59.771Z",
     "created_by": "admin"
   },
   {
     "path": "data/bots/BOT_ID_PLACEHOLDER/flows/my-new-flow.flow.json",
-    "revision": "il8NWm7f",
-    "created_on": "2023-11-02T12:57:07.938Z",
+    "revision": "33y07b6T",
+    "created_on": "2023-11-02T13:05:00.797Z",
     "created_by": "admin"
   },
   {
     "path": "data/bots/BOT_ID_PLACEHOLDER/flows/my-new-flow.ui.json",
-    "revision": "Dukpu9Lo",
-    "created_on": "2023-11-02T12:57:07.938Z",
+    "revision": "5EYYmPkd",
+    "created_on": "2023-11-02T13:05:00.798Z",
     "created_by": "admin"
   },
   {
     "path": "data/bots/BOT_ID_PLACEHOLDER/flows/my-new-flow.flow.json",
-    "revision": "CgiuKW_U",
-    "created_on": "2023-11-02T12:57:09.388Z",
+    "revision": "nPrXJEpJ",
+    "created_on": "2023-11-02T13:05:15.956Z",
     "created_by": "admin"
   },
   {
     "path": "data/bots/BOT_ID_PLACEHOLDER/flows/my-new-flow.ui.json",
-    "revision": "Dv78G7_j",
-    "created_on": "2023-11-02T12:57:09.388Z",
+    "revision": "QSSaEM44",
+    "created_on": "2023-11-02T13:05:15.956Z",
     "created_by": "admin"
   },
   {
     "path": "data/bots/BOT_ID_PLACEHOLDER/flows/my-new-flow.flow.json",
-    "revision": "lnutZ7oh",
-    "created_on": "2023-11-02T12:57:11.296Z",
+    "revision": "oHHakXzr",
+    "created_on": "2023-11-02T13:05:17.486Z",
     "created_by": "admin"
   },
   {
     "path": "data/bots/BOT_ID_PLACEHOLDER/flows/my-new-flow.ui.json",
-    "revision": "oygTBep2",
-    "created_on": "2023-11-02T12:57:11.296Z",
-    "created_by": "admin"
-  },
-  {
-    "path": "data/bots/BOT_ID_PLACEHOLDER/flows/my-new-flow.ui.json",
-    "revision": "zGUgPFoU",
-    "created_on": "2023-11-02T12:57:13.095Z",
-    "created_by": "admin"
-  },
-  {
-    "path": "data/bots/BOT_ID_PLACEHOLDER/flows/my-new-flow.flow.json",
-    "revision": "tPxHHdo2",
-    "created_on": "2023-11-02T12:57:13.095Z",
-    "created_by": "admin"
-  },
-  {
-    "path": "data/bots/BOT_ID_PLACEHOLDER/flows/my-new-flow.flow.json",
-    "revision": "OM3zV4vn",
-    "created_on": "2023-11-02T12:57:13.329Z",
-    "created_by": "admin"
-  },
-  {
-    "path": "data/bots/BOT_ID_PLACEHOLDER/flows/my-new-flow.ui.json",
-    "revision": "FDjPeiqM",
-    "created_on": "2023-11-02T12:57:13.329Z",
-    "created_by": "admin"
-  },
-  {
-    "path": "data/bots/BOT_ID_PLACEHOLDER/flows/my-new-flow.ui.json",
-    "revision": "W-eMG4Xt",
-    "created_on": "2023-11-02T12:57:16.709Z",
-    "created_by": "admin"
-  },
-  {
-    "path": "data/bots/BOT_ID_PLACEHOLDER/flows/my-new-flow.flow.json",
-    "revision": "FzvJJ-Bg",
-    "created_on": "2023-11-02T12:57:16.709Z",
-    "created_by": "admin"
-  },
-  {
-    "path": "data/bots/BOT_ID_PLACEHOLDER/flows/my-new-flow.ui.json",
-    "revision": "mlXLE8of",
-    "created_on": "2023-11-02T12:57:24.544Z",
-    "created_by": "admin"
-  },
-  {
-    "path": "data/bots/BOT_ID_PLACEHOLDER/flows/my-new-flow.flow.json",
-    "revision": "NMKOhmp5",
-    "created_on": "2023-11-02T12:57:24.545Z",
-    "created_by": "admin"
-  },
-  {
-    "path": "data/bots/BOT_ID_PLACEHOLDER/flows/my-new-flow.flow.json",
-    "revision": "FM1i5S-6",
-    "created_on": "2023-11-02T12:57:30.143Z",
-    "created_by": "admin"
-  },
-  {
-    "path": "data/bots/BOT_ID_PLACEHOLDER/flows/my-new-flow.ui.json",
-    "revision": "2CCiKqwm",
-    "created_on": "2023-11-02T12:57:30.143Z",
+    "revision": "o39PrWKO",
+    "created_on": "2023-11-02T13:05:17.486Z",
     "created_by": "admin"
   }
 ]

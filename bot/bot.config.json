@@ -37,12 +37,12 @@
   "languages": [
     "en"
   ],
-  "id": "sb_2",
-  "name": "master (sb_2)",
+  "id": "sb_3",
+  "name": "master (sb_3)",
   "pipeline_status": {
     "current_stage": {
       "id": "dev",
-      "promoted_on": "2023-11-02T12:59:30.000Z",
+      "promoted_on": "2023-11-02T13:04:47.678Z",
       "promoted_by": "system"
     }
   }
