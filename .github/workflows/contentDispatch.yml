@@ -38,7 +38,17 @@ jobs:
               -H "X-BP-Workspace: $id" \
               -o bot/location-content/$id.json
           done
-          
+
+      - name: Package bot
+        run: |
+          tar -czvf bot.tgz bot/*
+
+      - name: Push bot to instance
+        run: |
+          curl -X POST -H "Authorization: Bearer ${{ env.API_TOKEN }}" -H "X-BP-Workspace: default" \
+               -H "Content-Type: application/tar+gzip" --data-binary @bot.tgz  \
+               "${{ secrets.DEV_URL }}/api/v2/admin/workspace/bots/${GITHUB_REF#refs/heads/}/import?overwrite=false"
+
       - name: Commit and Push
         run: |
           git fetch origin
