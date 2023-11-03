@@ -54,6 +54,7 @@ jobs:
           curl -X POST -H "Authorization: Bearer ${{ env.API_TOKEN }}" -H "X-BP-Workspace: default" \
                -H "Content-Type: application/tar+gzip" --data-binary @bot.tgz  \
                "${{ secrets.DEV_URL }}/api/v2/admin/workspace/bots/${GITHUB_REF#refs/heads/}/import?overwrite=false"
+          rm bot.tgz
 
       - name: Commit and Push
         run: |
