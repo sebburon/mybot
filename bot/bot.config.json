@@ -38,7 +38,7 @@
     "en"
   ],
   "id": "sb-demo-danh",
-  "name": "master (sb_3) (sb-demo-danh)",
+  "name": "master",
   "pipeline_status": {
     "current_stage": {
       "id": "dev",
