@@ -43,6 +43,12 @@ jobs:
         run: |
           tar -czvf bot.tgz bot/*
 
+      - name: delete bot
+        run: |
+          BRANCH_NAME=${{ github.event.ref }}
+          curl -X POST -H "Authorization: Bearer ${{ env.API_TOKEN }}" -H "X-BP-Workspace: default" \
+               "${{ secrets.DEV_URL }}/api/v2/admin/workspace/bots/${BRANCH_NAME#refs/heads/}/delete"
+
       - name: Push bot to instance
         run: |
           curl -X POST -H "Authorization: Bearer ${{ env.API_TOKEN }}" -H "X-BP-Workspace: default" \
