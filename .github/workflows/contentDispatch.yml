@@ -1,0 +1,41 @@
+name: Override Code via API
+
+on:
+  workflow_dispatch:
+
+jobs:
+  override-code:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+
+      - name: Set up Git
+        run: |
+          git config --global user.name 'GitHub Action'
+          git config --global user.email 'action@github.com'
+
+      - name: Authenticate and retrieve token
+        id: get_api_token
+        run: |
+          RESPONSE=$(curl -s -X POST "${{ secrets.DEV_URL }}/api/v2/admin/auth/login/basic/default" \
+                          -H "Content-Type: application/json" \
+                          -d '{
+                            "email": "${{ secrets.DEV_EMAIL }}",
+                            "password": "${{ secrets.DEV_PASSWORD }}"
+                          }')
+          API_TOKEN=$(echo $RESPONSE | jq -r '.payload.jwt')
+          echo "API_TOKEN=$API_TOKEN" >> $GITHUB_ENV
+
+      - name: content from content bots
+        run: |
+          array=("payroll-na-ca" "payroll-na-us")
+          for id in "${array[@]}"
+          do
+            curl -X GET -L "${{ secrets.DEV_URL }}/api/v1/studio/$id/qna/export" \
+              -H "Authorization: Bearer ${{ env.API_TOKEN }}" \
+              -H "Content-Type: application/json" \
+              -H "X-BP-Workspace: $id" \
+              -o bot/location-content/$id.json
+          done
