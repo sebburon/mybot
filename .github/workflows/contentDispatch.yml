@@ -1,5 +1,4 @@
-name: Override Code via API
-
+name: Dispatch Content Changes
 on:
   workflow_dispatch:
 
