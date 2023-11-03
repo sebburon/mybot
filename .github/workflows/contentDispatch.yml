@@ -42,7 +42,7 @@ jobs:
       - name: Commit and Push
         run: |
           git fetch origin
-          git checkout "${{ github.head_ref }}"
+          git checkout "${GITHUB_REF#refs/heads/}"
           git add .
           git commit -m "commit from instance"
-          git push origin "${{ github.head_ref }}"
+          git push origin "${GITHUB_REF#refs/heads/}"
