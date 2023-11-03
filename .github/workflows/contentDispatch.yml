@@ -38,3 +38,11 @@ jobs:
               -H "X-BP-Workspace: $id" \
               -o bot/location-content/$id.json
           done
+          
+      - name: Commit and Push
+        run: |
+          git fetch origin
+          git checkout "${GITHUB_REF#refs/heads/}"
+          git add .
+          git commit -m "commit from instance"
+          git push origin "${GITHUB_REF#refs/heads/}"
