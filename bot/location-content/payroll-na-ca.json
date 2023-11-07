@@ -114,37 +114,6 @@
       }
     },
     {
-      "id": "31oi0r2lvp_where_do_giraffes_live",
-      "data": {
-        "answers": {
-          "en": [
-            "They live in montreal and they love to chill with the racoons"
-          ]
-        },
-        "questions": {
-          "en": [
-            "Where can I find giraffes?",
-            "Where do they live?",
-            "Whats their natural habitat?",
-            "I am looking to find giraffes",
-            "Location of most giraffes",
-            "Tell me where giraffes live!",
-            "The giraffes are located where?",
-            "How can i find a wild giraffe?",
-            "Where the giraffes at?",
-            "Where to find giraffe"
-          ]
-        },
-        "redirectFlow": "",
-        "redirectNode": "",
-        "action": "text",
-        "enabled": true,
-        "contexts": [
-          "giraffes"
-        ]
-      }
-    },
-    {
       "id": "77cp93c72f_lets_talk_about_something_else",
       "data": {
         "answers": {
@@ -170,6 +139,37 @@
         "enabled": true,
         "contexts": [
           "contexts"
+        ]
+      }
+    },
+    {
+      "id": "31oi0r2lvp_where_do_giraffes_live",
+      "data": {
+        "answers": {
+          "en": [
+            "They live in QUEBEC and they love to chill with the racoons"
+          ]
+        },
+        "questions": {
+          "en": [
+            "Where can I find giraffes?",
+            "Where do they live?",
+            "Whats their natural habitat?",
+            "I am looking to find giraffes",
+            "Location of most giraffes",
+            "Tell me where giraffes live!",
+            "The giraffes are located where?",
+            "How can i find a wild giraffe?",
+            "Where the giraffes at?",
+            "Where to find giraffe"
+          ]
+        },
+        "redirectFlow": "",
+        "redirectNode": "",
+        "action": "text",
+        "enabled": true,
+        "contexts": [
+          "giraffes"
         ]
       }
     },
