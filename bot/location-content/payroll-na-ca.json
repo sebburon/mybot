@@ -234,6 +234,28 @@
           "monkeys"
         ]
       }
+    },
+    {
+      "id": "x8e6e31nej_why_is_the_sky_blue",
+      "data": {
+        "action": "text",
+        "contexts": [
+          "global"
+        ],
+        "enabled": true,
+        "answers": {
+          "en": [
+            "because it's like that"
+          ]
+        },
+        "questions": {
+          "en": [
+            "Why is the sky blue"
+          ]
+        },
+        "redirectFlow": "",
+        "redirectNode": ""
+      }
     }
   ],
   "contentElements": []
