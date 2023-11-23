@@ -25,18 +25,19 @@ jobs:
           echo "API_TOKEN=$API_TOKEN" >> $GITHUB_ENV
 
       - name: Check if bot exists
+        id: is-on-instance
         run: |
           status_code=$(curl -o response.txt -w '%{http_code}' -s "${{ secrets.DEV_URL }}/api/v1/studio/${GITHUB_REF#refs/heads/}/config" \
           -H "X-BP-Workspace: default" \
           -H "Authorization: Bearer ${{ env.API_TOKEN }}")
-          echo "API Response: $status_code"
+          echo "::set-output name=STATUS_CODE::${status_code}"
           if [ "$status_code" -eq 404 ]; then
             echo "Bot is not created no need to run this workflow"
             exit 0  # Non-zero exit code to fail the step
           fi
 
       - name: Fetch bot from instance
-        if: success()
+        if: steps.is-on-instance.outputs.STATUS_CODE != '404'
         run: |
           mkdir temp
           cd temp
@@ -52,30 +53,30 @@ jobs:
           ls -l
 
       - name: Unzip and overwrite actions and hooks
-        if: success()
+        if: steps.is-on-instance.outputs.STATUS_CODE != '404'
         run: |
           cp -r bot/actions/* temp/actions/
           cp -r bot/hooks/* temp/hooks/
 
       - name: Edit bot name
-        if: success()
+        if: steps.is-on-instance.outputs.STATUS_CODE != '404'
         run: |
           jq '.name = "master"' temp/bot.config.json > temp.json && mv temp.json temp/bot.config.json
 
       - name: Package bot
-        if: success()
+        if: steps.is-on-instance.outputs.STATUS_CODE != '404'
         run: |
           tar -czvf bot.tgz ./temp/*
 
       - name: delete bot
-        if: success()
+        if: steps.is-on-instance.outputs.STATUS_CODE != '404'
         run: |
           BRANCH_NAME=${{ github.event.ref }}
           curl -X POST -H "Authorization: Bearer ${{ env.API_TOKEN }}" -H "X-BP-Workspace: default" \
                "${{ secrets.DEV_URL }}/api/v2/admin/workspace/bots/${BRANCH_NAME#refs/heads/}/delete"
 
       - name: Push bot to instance
-        if: success()
+        if: steps.is-on-instance.outputs.STATUS_CODE != '404'
         run: |
           curl -X POST -H "Authorization: Bearer ${{ env.API_TOKEN }}" -H "X-BP-Workspace: default" \
                -H "Content-Type: application/tar+gzip" --data-binary @bot.tgz  \
