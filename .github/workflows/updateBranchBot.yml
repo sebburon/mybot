@@ -24,6 +24,13 @@ jobs:
           API_TOKEN=$(echo $RESPONSE | jq -r '.payload.jwt')
           echo "API_TOKEN=$API_TOKEN" >> $GITHUB_ENV
 
+      - name: Check if bot exists
+        run: |
+          response=$(curl -X GET -L "${{ secrets.DEV_URL }}/api/v1/studio/${GITHUB_REF#refs/heads/}/config" \
+          -H "X-BP-Workspace: default" \
+          -H "Authorization: Bearer ${{ env.API_TOKEN }}")
+          echo "API Response: $response"
+
       - name: Fetch bot from instance
         run: |
           mkdir temp
