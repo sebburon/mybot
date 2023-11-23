@@ -26,11 +26,11 @@ jobs:
 
       - name: Check if bot exists
         run: |
-          response=$(curl -X GET -L "${{ secrets.DEV_URL }}/api/v1/studio/${GITHUB_REF#refs/heads/}/config" \
+          status_code=$(curl -o response.txt -w '%{http_code}' -s "${{ secrets.DEV_URL }}/api/v1/studio/${GITHUB_REF#refs/heads/}/config" \
           -H "X-BP-Workspace: default" \
           -H "Authorization: Bearer ${{ env.API_TOKEN }}")
-          echo "API Response: $response.status_code"
-          if [ "$response.status_code" -eq 404 ]; then
+          echo "API Response: $status_code"
+          if [ "$status_code" -eq 404 ]; then
             echo "Bot is not created no need to run this workflow"
             exit 0  # Non-zero exit code to fail the step
 
