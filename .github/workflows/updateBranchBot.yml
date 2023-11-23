@@ -33,6 +33,7 @@ jobs:
           if [ "$status_code" -eq 404 ]; then
             echo "Bot is not created no need to run this workflow"
             exit 0  # Non-zero exit code to fail the step
+          fi
 
       - name: Fetch bot from instance
         run: |
