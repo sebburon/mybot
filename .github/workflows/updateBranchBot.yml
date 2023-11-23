@@ -36,6 +36,7 @@ jobs:
           fi
 
       - name: Fetch bot from instance
+        if: success()
         run: |
           mkdir temp
           cd temp
@@ -51,25 +52,30 @@ jobs:
           ls -l
 
       - name: Unzip and overwrite actions and hooks
+        if: success()
         run: |
           cp -r bot/actions/* temp/actions/
           cp -r bot/hooks/* temp/hooks/
 
       - name: Edit bot name
+        if: success()
         run: |
           jq '.name = "master"' temp/bot.config.json > temp.json && mv temp.json temp/bot.config.json
 
       - name: Package bot
+        if: success()
         run: |
           tar -czvf bot.tgz ./temp/*
 
       - name: delete bot
+        if: success()
         run: |
           BRANCH_NAME=${{ github.event.ref }}
           curl -X POST -H "Authorization: Bearer ${{ env.API_TOKEN }}" -H "X-BP-Workspace: default" \
                "${{ secrets.DEV_URL }}/api/v2/admin/workspace/bots/${BRANCH_NAME#refs/heads/}/delete"
 
       - name: Push bot to instance
+        if: success()
         run: |
           curl -X POST -H "Authorization: Bearer ${{ env.API_TOKEN }}" -H "X-BP-Workspace: default" \
                -H "Content-Type: application/tar+gzip" --data-binary @bot.tgz  \
