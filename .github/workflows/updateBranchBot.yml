@@ -41,16 +41,12 @@ jobs:
         run: |
           mkdir temp
           cd temp
-          pwd
-          ls -l
           echo "${{ github.head_ref }}"
           curl -X GET -L "${{ secrets.DEV_URL }}/api/v2/admin/workspace/bots/${GITHUB_REF#refs/heads/}/export" -H "X-BP-Workspace: default" \
               -H "Authorization: Bearer ${{ env.API_TOKEN }}" \
               -H "Content-Type: application/tar+gzip" --data-binary @bot.tgz  \
               -o bot.tgz
           tar zxvf bot.tgz
-          pwd 
-          ls -l
 
       - name: Unzip and overwrite actions and hooks
         if: steps.is-on-instance.outputs.STATUS_CODE != '404'
